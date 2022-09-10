@@ -4,18 +4,17 @@ import java.util.Scanner;
 
 public class Calculadora
 {
-    public static void main(String[] args)
+    public static void main (String[] args)
     {
-
         int n1, n2, op;
-        Scanner calc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ingrese un numero");
-        n1 = calc.nextInt();
-        System.out.println("Ingrese un numero");
-        n2 = calc.nextInt();
+        System.out.print("Ingrese un numero: ");
+        n1 = sc.nextInt();
+        System.out.print("Ingrese un numero: ");
+        n2 = sc.nextInt();
         System.out.println("1)Suma\n2)Resta\n3)Division\n4)Multiplicacion");
-        op = calc.nextInt();
+        op = sc.nextInt();
 
         switch (op)
         {
@@ -35,9 +34,5 @@ public class Calculadora
                 System.out.println("Opcion no valida");
                 break;
         }
-
     }
-
-
-
 }

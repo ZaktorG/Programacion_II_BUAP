@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ElMayorEs
 {
-    public static void main(String[] args)
+    public static void main (String[] args)
     {
         Scanner sc = new Scanner(System.in);
         String nombre1, nombre2;
@@ -15,7 +15,7 @@ public class ElMayorEs
         System.out.print("Ingrese edad: ");
         edad1 = sc.nextInt();
 
-        sc.nextLine();
+        sc.nextLine();//limpiar el buffer
 
         System.out.print("Ingrese nombre: ");
         nombre2 = sc.nextLine();

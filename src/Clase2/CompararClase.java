@@ -4,19 +4,18 @@ import java.util.Scanner;
 
 public class CompararClase
 {
-    public static void main(String[] args)
+    public static void main (String[] args)
     {
-        Scanner compc = new Scanner(System.in);
         String apellido1, apellido2;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ingrese primer apellido");
-        apellido1 = compc.nextLine();
-
-        System.out.println("Ingrese segundo apellido");
-        apellido2 = compc.nextLine();
+        System.out.print("Ingrese primer apellido: ");
+        apellido1 = sc.nextLine();
+        System.out.print("Ingrese segundo apellido: ");
+        apellido2 = sc.nextLine();
 
         if (apellido1.equals(apellido2))
-            System.out.println("los apellidos son iguales");
+            System.out.println("Los apellidos son iguales");
         else
             System.out.println("Los apellidos son diferentes");
     }

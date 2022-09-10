@@ -3,20 +3,19 @@ package Clase2;
 import java.util.Scanner;
 
 public class CicloFor
-
 {
-    public static void main(String[] args)
+    final static int NUMERO_ELEMENTOS = 3;
+    public static void main (String[] args)
     {
-        int suma = 0, n1;
-        Scanner teclado = new Scanner(System.in);
-        for (int i=0;i<3;i++)
+        int suma = 0, numero_ingresado;
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < NUMERO_ELEMENTOS; i++)
         {
-            System.out.println("Ingrese un numero");
-            n1 = teclado.nextInt();
-            suma = n1 + suma;
+            System.out.print("Ingrese un numero: ");
+            numero_ingresado = sc.nextInt();
+            suma += numero_ingresado;
         }
-
-        System.out.println(suma/3);
-
+        System.out.println("El promedio es: " + suma/3);
     }
 }
